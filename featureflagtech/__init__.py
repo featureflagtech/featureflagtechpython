@@ -1,1 +1,1 @@
-from .client import Featureflagclient
+from .main import FeatureFlag
