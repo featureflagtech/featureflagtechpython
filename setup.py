@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name = 'featureflagtech',
-  version = '0.0.2',
+  version = '0.0.3',
   author = 'Charlie Hodgkinson',
   author_email = 'charlotte.hodgkinson4@gmail.com',
   description = 'devlopment of python featureflag client',
