@@ -1,15 +1,18 @@
 import requests 
 
 class FeatureFlag:
-    def __init__(self, opts):
-        self.URL = "https://api.featureflag.tech"
-        self.apikey = opts  # = {"fft-api-key": "38312f60-557a-11ea-8dfc-5976faa419b4"}
-        self.flags = {}
+    def __init__(self, key):
+        
+        self.apikey = {"fft-api-key": key.get("apiKey")}
+        if not self.apikey.get("fft-api-key"):
+            raise Exception("apiKey not given")
 
-    def getFlag(self):
-        r = requests.get(url = self.URL, headers = self.apikey)
-        self.flags = r.json()
-        print(self.flags)
+        r = (requests.get(url = "https://api.featureflag.tech", headers = self.apikey))
+        if not r.ok:
+            raise Exception("Invalid API key")
+
+        else:
+            self.flags = r.json()
 
     def get(self, flagName):
-        return self.flags.get(flagName)
+        return self.flags.get(flagName, "Flag not found")
