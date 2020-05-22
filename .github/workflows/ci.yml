@@ -18,9 +18,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
         id: install-dependencies
       - run: |
+          # install dependencies
           python -m pip install --upgrade pip
-          pip install flake8 pytest
-          pip install -r requirements.txt
+          pip install flake8 pytest requests_mock
         id: linting
       - run: |
           # stop the build if there are Python syntax errors or undefined names
@@ -29,6 +29,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         id: unit-tests
       - run: |
+          # unit tests
           pytest
 
   publish:
