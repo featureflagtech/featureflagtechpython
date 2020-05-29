@@ -6,8 +6,8 @@ Official PyPi client for [featureflag.tech](https://featureflag.tech)
 
 Features:
 
- * Extremely light-weight ( < 60 lines of code, 1 dependency ).
- * Serverless runtime support (NodeJS 6.10 compliant, will work on AWS Lambda)
+ * Extremely light-weight ( < 30 lines of code, 1 production dependency ).
+ * Serverless runtime support (will work on AWS Lambda)
 
  ## Support
 
