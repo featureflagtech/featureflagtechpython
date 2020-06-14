@@ -2,7 +2,9 @@
 
 ![Workflow status badge](https://github.com/featureflagtech/featureflagtechpython/workflows/PythonPackage/badge.svg)
 
-Official PyPi client for [featureflag.tech](https://featureflag.tech)
+[![Available on Pypi](https://badge.fury.io/py/featureflagtech.png)](https://pypi.org/project/featureflagtech/)
+
+Official Python client for [featureflag.tech](https://featureflag.tech)
 
 Features:
 
@@ -11,9 +13,7 @@ Features:
 
  ## Support
 
-The official PyPi client for featureflag.tech is compatible with Python 3.5 and upwards.
-
-Web browsers are not currently officially supported.
+The official PyPi client for featureflag.tech is compatible with Python 3.5, 3.6, 3.7 and 3.8.
 
 ## Install
 
@@ -46,7 +46,7 @@ Activate your virtual environment:
 ```
 pip install virtualenv
 virtualenv venv
-source venv/scripts/activate
+source venv/bin/activate
 ```
 
 Install deps:

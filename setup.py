@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
   name = 'featureflagtech',
-  version = '0.0.6',
+  version = '0.0.7',
   author = 'Charlie Hodgkinson',
   author_email = 'charlotte.hodgkinson4@gmail.com',
   description = 'devlopment of python featureflag client',
