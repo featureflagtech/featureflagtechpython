@@ -6,7 +6,11 @@
 
 Official Python client for [featureflag.tech](https://featureflag.tech)
 
-Features:
+FeatureFlagTech is a fully managed feature flag service inspired by the way you work and integrate with other software services.
+
+With us you pay only for what you use. We also offer a generous free tier.
+
+Python client features:
 
  * Extremely light-weight ( < 30 lines of code, 1 production dependency ).
  * Serverless runtime support (will work on AWS Lambda)
